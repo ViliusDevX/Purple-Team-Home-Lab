@@ -49,7 +49,7 @@ The goal is to support a repeatable loop:
 | KALI01 | ATTACK (DHCP) | `10.10.30.100` |
 
 📸 **Screenshot placeholder:** *Topology overview / IP plan*  
-- `screenshots/setup/??-topology.png` *i will put general machine overview image here*
+- [screenshots/setup/??-topology.png](https://github.com/ViliusDevX/Purple-Team-Home-Lab/blob/main/setup-process/Screenshots/33_Machines.jpg)
 
 ---
 
