@@ -49,8 +49,7 @@ The goal is to support a repeatable loop:
 | KALI01 | ATTACK (DHCP) | `10.10.30.100` |
 
 📸 **Screenshot placeholder:** *Topology overview / IP plan*  
-- [screenshots/setup/??-topology.png](https://github.com/ViliusDevX/Purple-Team-Home-Lab/blob/main/setup-process/Screenshots/33_Machines.jpg)
-
+https://github.com/ViliusDevX/Purple-Team-Home-Lab/blob/main/setup-process/Screenshots/33_Machines.jpg?raw=true
 ---
 
 ## 2. VirtualBox Networking
