@@ -61,7 +61,7 @@ I used VirtualBox internal networks to isolate and control traffic:
 - **Host-only**: `VirtualBox Host-Only Adapter`
 
 📸 **Screenshot placeholder:** *Overall VirtualBox machine setup / adapters*  
-- `screenshots/setup/33-overall-machine-setup-virtualbox.png`
+![alt text](https://github.com/ViliusDevX/Purple-Team-Home-Lab/blob/main/setup-process/Screenshots/33_Machines.jpg?raw=true)
 
 ---
 
