@@ -60,8 +60,6 @@ I used VirtualBox internal networks to isolate and control traffic:
 - **Internal Network**: `ATTACK`
 - **Host-only**: `VirtualBox Host-Only Adapter`
 
-![general machines overview](Screenshots/33_Machines.jpg)
-
 ---
 
 ## 3. pfSense Installation & Base Config
