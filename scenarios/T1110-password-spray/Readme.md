@@ -17,6 +17,7 @@ Simulate a password spraying attack against Active Directory users, detect the a
 ```
 crackmapexec smb 10.10.10.X -u users.txt -p WrongPassword123
 ```
+![first attack](Screenshots/1_crackmapexec_attack.png)
 
 **Description:**
 A password spraying attack was performed by attempting authentication with a common password across multiple domain user accounts.
@@ -25,6 +26,9 @@ A password spraying attack was performed by attempting authentication with a com
 
 * Multiple failed authentication attempts were generated across domain users.
 * No account lockouts occurred during this phase.
+
+![second logs](Screenshots/2_event_logs.png)
+
 
 ---
 
@@ -39,6 +43,8 @@ A password spraying attack was performed by attempting authentication with a com
 * Rule triggered: **T1110 – Multiple Windows logon failures**
 * Alert level: **High (Level 10)**
 * Detection based on correlation of multiple failed logon events
+
+![third wazuh_logs](Screenshots/3_Wazuh_detections.png)
 
 ---
 
@@ -80,6 +86,8 @@ A password spraying attack was performed by attempting authentication with a com
 auditpol /set /subcategory:"User Account Management" /success:enable /failure:enable
 ```
 
+![fourth lockout_policy_empty](Screenshots/4_lockout_policy_empty.png)
+
 ---
 
 ## Hardening
@@ -89,6 +97,9 @@ Implemented **Account Lockout Policy** via Group Policy:
 * Lockout threshold: **5 failed attempts**
 * Lockout duration: **15 minutes**
 * Reset counter after: **15 minutes**
+
+![fifth lockout_policy_done](Screenshots/5_lockout_policy_done.png)
+![sixth more_logs](Screenshots/6_more_event_logs.png)
 
 ---
 
@@ -102,4 +113,5 @@ To validate the lockout policy, repeated authentication attempts were performed 
 * **Event ID 4740 (Account locked out)** was generated
 * Event visibility required filtering due to log volume
 * Detection confirmed in both Windows Event Logs and Wazuh SIEM
-  
+
+![seventh 4740_event](Screenshots/7_4740_event.png)
