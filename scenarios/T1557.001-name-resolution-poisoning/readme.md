@@ -89,7 +89,7 @@ Observed capture types included:
 * WebDAV NTLMv2 authentication
 * IPv6 link-local client activity
 
-![Responder captured NetNTLMv2 hash before hardening]()
+![Responder captured NetNTLMv2 hash before hardening](screenshots/01_responder_hash_capture_before_hardening.png)
 
 ---
 
@@ -129,7 +129,7 @@ Observed network activity included:
 
 Example evidence:
 
-![Sysmon Event ID 3 showing network connection telemetry]()
+![Sysmon Event ID 3 showing network connection telemetry](screenshots/02_sysmon_event3_network_connection.png)
 
 ---
 
@@ -137,11 +137,11 @@ Example evidence:
 
 Wazuh confirmed that endpoint telemetry was being received from both `DC01` and `CLIENT01`.
 
-![Wazuh agents active]()
+![Wazuh agents active](screenshots/03_wazuh_agents_active.png)
 
 Wazuh generated generic discovery related alerts during testing, including `net.exe` account discovery activity.
 
-![Wazuh generic endpoint telemetry]()
+![Wazuh generic endpoint telemetry](screenshots/04_wazuh_generic_endpoint_telemetry.png)
 
 However, Wazuh did not generate a dedicated high confidence LLMNR/NBT-NS poisoning alert by default.
 
@@ -313,13 +313,13 @@ Observed evidence:
 * WebDAV NTLMv2 capture
 * Sysmon Event ID 3 network connection telemetry
 
-![Responder capture before hardening]()
+![Responder capture before hardening](screenshots/01_responder_hash_capture_before_hardening.png)
 
 ### After Hardening
 
 After applying LLMNR, NetBIOS, and firewall-based controls, Responder no longer captured new credentials during the repeated test.
 
-![Responder listening with no new captures after hardening]()
+![Responder listening with no new captures after hardening](screenshots/05_responder_no_capture_after_hardening.png)
 
 Fresh Sysmon queries were used to check for remaining relevant traffic:
 
